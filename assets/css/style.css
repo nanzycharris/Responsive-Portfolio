@@ -10,7 +10,9 @@ body {
 
 .container {
     background-color: #ffffff;
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0;
     height: auto;
     font-family: 'Arial', "Helvetica Neue", Arial, Helvetica, sans-serif;
     margin-top: 40px;
@@ -18,6 +20,7 @@ body {
     margin-bottom: 1px;
     border: #dddddd 1px solid;
     color: #777777;
+    clear: both;
 }
 
 .navbar {
@@ -199,7 +202,7 @@ input[type=text], select, textarea {
     background-color: #4aaaa5;
   }
 
-/*Portfolio starts here */
+/* portfolio page */
 
 .row2 {
     margin-right: -10px;
@@ -227,14 +230,208 @@ input[type=text], select, textarea {
     padding: 10px;
 }
 
-h3 {
-    background-color: #4aaaa5;
-    color: #ffffff;
-    margin-left: 25px;
-    width: 100%;
-    height: 50px;
-    text-align: left;
-    margin-top: -4px;
-    text-align: center;
-    padding-top: 6px;
+#main-container {
+    background-color: white;
+    height: 700px;
+    padding: 10px;
 }
+
+.work {
+    position: relative;
+    float: left;
+    width: 220px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  
+  /* contact page */
+  
+  #contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+  
+@media screen and (max-width: 980px) {
+    body {
+      background-color: rgb(240, 193, 193);
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .container {
+       width: 100%;
+       padding: 10px;
+    }
+     
+    .row {
+       width: 100%;
+    }  
+
+    #p2 {
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      background-color: rgb(245, 141, 205);
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .container {
+       width: 100%;
+       padding: 10px;
+    }
+     
+    .row {
+       width: 100%;
+    }  
+
+    #p2 {
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+      background-color: rgb(245, 141, 205);
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .container {
+       width: 100%;
+       padding: 10px;
+    }
+     
+    header {
+        position: static;
+    }
+
+    .row {
+       width: 100%;
+    }  
+
+    #p2 {
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+}
+  
+  /* Additional Screen Sizes */
+  /* Width at 320px and below */
+  @media screen and (max-width: 320px) {
+    body {
+        background-color: rgb(245, 141, 205);
+      }
+  
+      nav {
+          width: 100%;
+          padding: 10px;
+      }
+      
+      .container {
+         width: 100%;
+         padding: 10px;
+      }
+       
+      .row {
+         width: 50%;
+      }  
+      
+        #p2 {
+        margin-top: 10px;
+        margin-left: 25px;
+        }
+  }
+
+    /* Width at 168px and below */
+  @media screen and (max-width: 168px) {
+    body {
+        background-color: rgb(245, 141, 205);
+      }
+  
+      nav {
+          width: 100%;
+          padding: 10px;
+      }
+      
+      .container {
+         width: 100%;
+         padding: 10px;
+      }
+       
+      .row {
+         width: 50%;
+      }  
+  }
